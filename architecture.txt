@@ -1,0 +1,305 @@
+order-inventory-management/
+│
+├── public/
+│   ├── images/
+│   │   ├── products/
+│   │   ├── users/
+│   │   ├── stores/
+│   │   ├── categories/
+│   │   └── logo.png
+│   ├── favicon.ico
+│   └── robots.txt
+│
+├── src/
+│
+├── app/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── routes.jsx
+│   ├── providers.jsx
+│   └── queryClient.js
+│
+├── shared/
+│   │
+│   ├── api/
+│   │   ├── axios.js
+│   │   └── endpoints.js
+│   │
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Loader.jsx
+│   │   │   ├── Loader.css
+│   │   │   ├── Skeleton.jsx
+│   │   │   ├── Skeleton.css
+│   │   │   ├── EmptyState.jsx
+│   │   │   ├── EmptyState.css
+│   │   │   ├── ErrorState.jsx
+│   │   │   ├── ErrorState.css
+│   │   │   ├── SearchBar.jsx
+│   │   │   ├── SearchBar.css
+│   │   │   ├── Pagination.jsx
+│   │   │   ├── Pagination.css
+│   │   │   ├── StatusBadge.jsx
+│   │   │   ├── StatusBadge.css
+│   │   │   ├── DataTable.jsx
+│   │   │   ├── DataTable.css
+│   │   │   ├── Modal.jsx
+│   │   │   ├── Modal.css
+│   │   │   ├── ConfirmDialog.jsx
+│   │   │   ├── ConfirmDialog.css
+│   │   │   ├── ThemeToggle.jsx
+│   │   │   ├── ThemeToggle.css
+│   │   │   └── ProtectedRoute.jsx
+│   │   │
+│   │   └── layout/
+│   │       ├── Sidebar.jsx
+│   │       ├── Sidebar.css
+│   │       ├── Navbar.jsx
+│   │       ├── Navbar.css
+│   │       ├── Header.jsx
+│   │       ├── Header.css
+│   │       ├── Footer.jsx
+│   │       ├── Footer.css
+│   │       ├── AdminLayout.jsx
+│   │       ├── AdminLayout.css
+│   │       ├── CustomerLayout.jsx
+│   │       ├── CustomerLayout.css
+│   │       ├── PublicLayout.jsx
+│   │       └── PublicLayout.css
+│   │
+│   ├── hooks/
+│   │   ├── useDebounce.js
+│   │   ├── usePagination.js
+│   │   ├── useTheme.js
+│   │   └── useLocalStorage.js
+│   │
+│   ├── utils/
+│   │   ├── constants.js
+│   │   ├── helpers.js
+│   │   ├── validators.js
+│   │   └── formatCurrency.js
+│   │
+│   └── styles/
+│       ├── globals.css
+│       ├── variables.css
+│       └── theme.css
+│
+├── features/
+│
+│   ├── auth/
+│   │   ├── api/
+│   │   │   └── authApi.js
+│   │   ├── components/
+│   │   │   ├── LoginForm.jsx
+│   │   │   ├── LoginForm.css
+│   │   │   ├── RegisterForm.jsx
+│   │   │   ├── RegisterForm.css
+│   │   │   ├── AdminLoginForm.jsx
+│   │   │   ├── AdminLoginForm.css
+│   │   │   ├── AuthCard.jsx
+│   │   │   └── AuthCard.css
+│   │   ├── hooks/
+│   │   │   └── useAuth.js
+│   │   ├── pages/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   └── AdminLogin.jsx
+│   │   ├── store/
+│   │   │   └── authStore.js
+│   │   └── validation/
+│   │       ├── loginSchema.js
+│   │       └── registerSchema.js
+│
+│   ├── dashboard/
+│   │   ├── components/
+│   │   │   ├── StatsCard.jsx
+│   │   │   ├── StatsCard.css
+│   │   │   ├── RevenueCard.jsx
+│   │   │   ├── RevenueCard.css
+│   │   │   ├── LowStockCard.jsx
+│   │   │   ├── LowStockCard.css
+│   │   │   ├── RecentOrders.jsx
+│   │   │   ├── RecentOrders.css
+│   │   │   ├── DashboardChart.jsx
+│   │   │   └── DashboardChart.css
+│   │   └── pages/
+│   │       └── Dashboard.jsx
+│
+│   ├── products/
+│   │   ├── api/
+│   │   │   └── productApi.js
+│   │   ├── components/
+│   │   │   ├── ProductTable.jsx
+│   │   │   ├── ProductTable.css
+│   │   │   ├── ProductCard.jsx
+│   │   │   ├── ProductCard.css
+│   │   │   ├── ProductGrid.jsx
+│   │   │   ├── ProductGrid.css
+│   │   │   ├── ProductForm.jsx          ← Admin Add/Edit Product
+│   │   │   ├── ProductForm.css
+│   │   │   ├── ProductSearch.jsx
+│   │   │   ├── ProductSearch.css
+│   │   │   ├── ProductFilter.jsx
+│   │   │   ├── ProductFilter.css
+│   │   │   ├── ProductImage.jsx
+│   │   │   └── ProductImage.css
+│   │   ├── hooks/
+│   │   │   ├── useProducts.js
+│   │   │   └── useProductMutations.js
+│   │   ├── pages/
+│   │   │   ├── Products.jsx
+│   │   │   ├── ProductDetails.jsx
+│   │   │   ├── AddProduct.jsx          ← Admin Only
+│   │   │   └── EditProduct.jsx         ← Admin Only
+│   │   └── validation/
+│   │       └── productSchema.js
+│
+│   ├── customers/
+│   │   ├── api/
+│   │   │   └── customerApi.js
+│   │   ├── components/
+│   │   │   ├── CustomerTable.jsx
+│   │   │   ├── CustomerTable.css
+│   │   │   ├── CustomerCard.jsx
+│   │   │   ├── CustomerCard.css
+│   │   │   ├── CustomerForm.jsx
+│   │   │   ├── CustomerForm.css
+│   │   │   ├── CustomerStatus.jsx
+│   │   │   ├── CustomerStatus.css
+│   │   │   ├── BanCustomerModal.jsx
+│   │   │   └── BanCustomerModal.css
+│   │   ├── hooks/
+│   │   │   ├── useCustomers.js
+│   │   │   └── useCustomerMutations.js
+│   │   ├── pages/
+│   │   │   ├── Customers.jsx
+│   │   │   └── CustomerDetails.jsx
+│   │   └── validation/
+│   │       └── customerSchema.js
+│
+│   ├── orders/
+│   │   ├── api/
+│   │   │   └── orderApi.js
+│   │   ├── components/
+│   │   │   ├── OrderTable.jsx
+│   │   │   ├── OrderTable.css
+│   │   │   ├── OrderCard.jsx
+│   │   │   ├── OrderCard.css
+│   │   │   ├── OrderItems.jsx
+│   │   │   ├── OrderItems.css
+│   │   │   ├── OrderSummary.jsx
+│   │   │   ├── OrderSummary.css
+│   │   │   ├── OrderStatus.jsx
+│   │   │   └── OrderStatus.css
+│   │   ├── hooks/
+│   │   │   ├── useOrders.js
+│   │   │   └── useOrderMutations.js
+│   │   ├── pages/
+│   │   │   ├── Orders.jsx
+│   │   │   └── OrderDetails.jsx
+│   │   └── validation/
+│   │       └── orderSchema.js
+│
+│   ├── shipments/
+│   │   ├── api/
+│   │   │   └── shipmentApi.js
+│   │   ├── components/
+│   │   │   ├── ShipmentTable.jsx
+│   │   │   ├── ShipmentTable.css
+│   │   │   ├── ShipmentCard.jsx
+│   │   │   ├── ShipmentCard.css
+│   │   │   ├── ShipmentStatus.jsx
+│   │   │   ├── ShipmentStatus.css
+│   │   │   ├── ShipmentTimeline.jsx
+│   │   │  └── ShipmentTimeline.css
+│   │   ├── hooks/
+│   │   │   ├── useShipments.js
+│   │   │   └── useShipmentMutations.js
+│   │   ├── pages/
+│   │   │   ├── Shipments.jsx
+│   │   │   └── ShipmentDetails.jsx
+│   │   └── validation/
+│   │       └── shipmentSchema.js
+│
+│   ├── stores/
+│   │   ├── api/
+│   │   │   └── storeApi.js
+│   │   ├── components/
+│   │   │   ├── StoreTable.jsx
+│   │   │   ├── StoreTable.css
+│   │   │   ├── StoreCard.jsx
+│   │   │   ├── StoreCard.css
+│   │   │   ├── StoreMap.jsx
+│   │   │   └── StoreMap.css
+│   │   ├── hooks/
+│   │   │   └── useStores.js
+│   │   ├── pages/
+│   │   │   ├── Stores.jsx
+│   │   │  └── StoreDetails.jsx
+│   │   └── validation/
+│   │       └── storeSchema.js
+│
+│   ├── inventory/
+│   │   ├── api/
+│   │   │   └── inventoryApi.js
+│   │   ├── components/
+│   │   │   ├── InventoryTable.jsx
+│   │   │   ├── InventoryTable.css
+│   │   │   ├── InventoryCard.jsx
+│   │   │  ├── InventoryCard.css
+│   │   │  ├── InventoryForm.jsx
+│   │   │  ├── InventoryForm.css
+│   │   │  ├── RestockModal.jsx
+│   │   │  ├── RestockModal.css
+│   │   │  ├── StockBadge.jsx
+│   │   │  └── StockBadge.css
+│   │   ├── hooks/
+│   │   │  ├── useInventory.js
+│   │   │  └── useInventoryMutations.js
+│   │   ├── pages/
+│   │   │  └── Inventory.jsx
+│   │   └── validation/
+│   │       └── inventorySchema.js
+│
+│   ├── cart/
+│   │   ├── components/
+│   │   │  ├── CartItem.jsx
+│   │   │  ├── CartItem.css
+│   │   │  ├── CartSummary.jsx
+│   │   │  ├── CartSummary.css
+│   │   │  ├── CheckoutSummary.jsx
+│   │   │  └── CheckoutSummary.css
+│   │   ├── pages/
+│   │   │  ├── Cart.jsx
+│   │   │  └── Checkout.jsx
+│   │   └── store/
+│   │       └── cartStore.js
+│
+│   ├── profile/
+│   │   ├── components/
+│   │   │  ├── ProfileCard.jsx
+│   │   │  └── ProfileCard.css
+│   │   └── pages/
+│   │       └── Profile.jsx
+│
+│   └── not-found/
+│       └── pages/
+│           └── NotFound.jsx
+│
+├── stores/
+│   ├── themeStore.js
+│   └── uiStore.js
+│
+├── tests/
+│   ├── components/
+│   ├── hooks/
+│   ├── pages/
+│   ├── stores/
+│   └── utils/
+│
+├── db.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md

@@ -1,0 +1,45 @@
+.skeleton {
+  display: block;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-2);
+}
+
+.skeleton:last-child {
+  margin-bottom: 0;
+}
+
+.skeleton--text {
+  width: 100%;
+  height: 14px;
+  border-radius: var(--radius-sm);
+}
+
+.skeleton--rect {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+}
+
+.skeleton--circle {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+}
+
+.skeleton-row td {
+  padding: var(--space-2) var(--space-3);
+}
+
+.skeleton-row .skeleton {
+  margin-bottom: 0;
+}
+
+.skeleton-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+}

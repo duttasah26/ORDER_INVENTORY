@@ -1,0 +1,50 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-body-strong);
+  line-height: 1.4;
+  white-space: nowrap;
+  transition: background-color var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out),
+    color var(--duration-base) var(--ease-out);
+}
+
+.status-badge--pending {
+  background: color-mix(in srgb, var(--color-status-pending) 12%, transparent);
+  border-color: color-mix(in srgb, var(--color-status-pending) 40%, transparent);
+  color: var(--color-status-pending);
+}
+
+.status-badge--processing {
+  background: color-mix(in srgb, var(--color-status-processing) 12%, transparent);
+  border-color: color-mix(in srgb, var(--color-status-processing) 40%, transparent);
+  color: var(--color-status-processing);
+}
+
+.status-badge--shipped {
+  background: color-mix(in srgb, var(--color-status-shipped) 12%, transparent);
+  border-color: color-mix(in srgb, var(--color-status-shipped) 40%, transparent);
+  color: var(--color-status-shipped);
+}
+
+.status-badge--delivered {
+  background: color-mix(in srgb, var(--color-status-delivered) 12%, transparent);
+  border-color: color-mix(in srgb, var(--color-status-delivered) 40%, transparent);
+  color: var(--color-status-delivered);
+}
+
+.status-badge--cancelled {
+  background: color-mix(in srgb, var(--color-status-cancelled) 12%, transparent);
+  border-color: color-mix(in srgb, var(--color-status-cancelled) 40%, transparent);
+  color: var(--color-status-cancelled);
+}
+
+.status-badge--lowstock {
+  background: color-mix(in srgb, var(--color-status-lowstock) 12%, transparent);
+  border-color: color-mix(in srgb, var(--color-status-lowstock) 40%, transparent);
+  color: var(--color-status-lowstock);
+}

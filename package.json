@@ -1,0 +1,44 @@
+{
+  "name": "order-inventory-management",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/server.js",
+    "server:dev": "nodemon server/server.js",
+    "start": "concurrently -n SERVER,VITE -c yellow,cyan \"npm:server:dev\" \"npm:dev\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.59.0",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
+    "express": "^4.21.1",
+    "formik": "^2.4.6",
+    "json-server": "^0.17.4",
+    "lucide-react": "^0.454.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "recharts": "^2.13.0",
+    "yup": "^1.4.0",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.2",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@tanstack/react-query-devtools": "^5.59.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "concurrently": "^9.0.1",
+    "jsdom": "^25.0.1",
+    "msw": "^2.4.11",
+    "nodemon": "^3.1.7",
+    "vite": "^5.4.9",
+    "vitest": "^2.1.3"
+  }
+}

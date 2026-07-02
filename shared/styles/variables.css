@@ -1,0 +1,75 @@
+:root {
+  --color-surface-base: #F8FAFC;
+  --color-surface-card: #FFFFFF;
+  --color-border-default: #E2E8F0;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #334155;
+  --color-text-muted: #64748B;
+  --color-brand-accent: #4F46E5;
+  --color-brand-accent-hover: #4338CA;
+
+  --color-status-pending: #F59E0B;
+  --color-status-processing: #3B82F6;
+  --color-status-shipped: #8B5CF6;
+  --color-status-delivered: #22C55E;
+  --color-status-cancelled: #EF4444;
+  --color-status-lowstock: #F59E0B;
+
+  --font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-size-display: 24px;
+  --font-weight-display: 600;
+  --font-size-heading: 18px;
+  --font-weight-heading: 600;
+  --font-size-body: 14px;
+  --font-weight-body: 400;
+  --font-size-body-strong: 14px;
+  --font-weight-body-strong: 500;
+  --font-size-caption: 12px;
+  --font-weight-caption: 400;
+  --font-size-numeric: 16px;
+  --font-weight-numeric: 600;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 40px;
+  --radius-sm: 6px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+
+  --shadow-dropdown: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-modal: 0 12px 32px rgba(0,0,0,0.16);
+  --shadow-toast: 0 6px 16px rgba(0,0,0,0.12);
+  --backdrop-modal: rgba(0,0,0,0.4);
+
+  --duration-instant: 100ms;
+  --duration-fast: 175ms;
+  --duration-base: 250ms;
+  --duration-slow: 350ms;
+  --ease-out: ease-out;
+  --ease-in-out: ease-in-out;
+  --ease-in: ease-in;
+  --ease-linear: linear;
+
+  --content-max-width: 1440px;
+  --page-padding-x: 32px;
+}
+
+html[data-theme='dark'] {
+  --color-surface-base: #020617;
+  --color-surface-card: #0F172A;
+  --color-border-default: #1E293B;
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #E2E8F0;
+  --color-text-muted: #94A3B8;
+  --color-brand-accent: #818CF8;
+  --color-brand-accent-hover: #6366F1;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --page-padding-x: 16px;
+  }
+}
