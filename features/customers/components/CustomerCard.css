@@ -1,0 +1,58 @@
+.customer-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+  transition: box-shadow var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out);
+}
+
+.customer-card[role='button'] {
+  cursor: pointer;
+}
+
+.customer-card[role='button']:hover {
+  box-shadow: var(--shadow-dropdown);
+  border-color: var(--color-brand-accent);
+}
+
+.customer-card__avatar {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--color-brand-accent) 15%, transparent);
+  color: var(--color-brand-accent);
+  font-size: var(--font-size-body-strong);
+  font-weight: var(--font-weight-body-strong);
+}
+
+.customer-card__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.customer-card__name {
+  margin: 0;
+  font-size: var(--font-size-body-strong);
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.customer-card__email {
+  margin: 0;
+  font-size: var(--font-size-caption);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

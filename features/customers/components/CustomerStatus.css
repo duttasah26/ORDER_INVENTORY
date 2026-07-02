@@ -1,0 +1,6 @@
+/*
+ * CustomerStatus renders a bare StatusBadge with no wrapper markup, so all
+ * visual styling comes from shared/components/common/StatusBadge.css. This
+ * file intentionally has no rules — kept as a placeholder for future
+ * customer-status-specific overrides.
+ */

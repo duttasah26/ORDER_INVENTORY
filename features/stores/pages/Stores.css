@@ -1,0 +1,18 @@
+.stores-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.stores-page__title {
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-display);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.stores-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-3);
+}

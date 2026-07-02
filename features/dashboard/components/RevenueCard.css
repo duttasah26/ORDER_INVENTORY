@@ -1,0 +1,46 @@
+.revenue-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  height: 100%;
+}
+
+.revenue-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.revenue-card__icon {
+  color: var(--color-brand-accent);
+}
+
+.revenue-card__title {
+  margin: 0;
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text-primary);
+}
+
+.revenue-card__value {
+  margin: 0;
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-numeric);
+  color: var(--color-text-primary);
+}
+
+.revenue-card__caption {
+  margin: 0;
+  font-size: var(--font-size-caption);
+  color: var(--color-text-muted);
+}
+
+.revenue-card__skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}

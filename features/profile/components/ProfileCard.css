@@ -1,0 +1,86 @@
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+}
+
+.profile-card__avatar {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--color-brand-accent) 15%, transparent);
+  color: var(--color-brand-accent);
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-display);
+}
+
+.profile-card__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-card__name {
+  margin: 0;
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text-primary);
+}
+
+.profile-card__email {
+  margin: var(--space-1) 0 0;
+  font-size: var(--font-size-body);
+  color: var(--color-text-muted);
+}
+
+.profile-card__edit-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.profile-card__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  width: 100%;
+}
+
+.profile-card__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.profile-card__label {
+  font-size: var(--font-size-body-strong);
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-text-secondary);
+}
+
+.profile-card__error {
+  margin: 0;
+  font-size: var(--font-size-caption);
+  color: var(--color-status-cancelled);
+}
+
+.profile-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-2);
+}
+
+.profile-card__actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}

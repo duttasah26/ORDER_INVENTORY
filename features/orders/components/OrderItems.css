@@ -1,0 +1,54 @@
+.order-items {
+  flex: 1 1 60%;
+  min-width: 0;
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+}
+
+.order-items__title {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-3);
+}
+
+.order-items__table-wrap {
+  overflow-x: auto;
+}
+
+.order-items__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-items__table th {
+  text-align: left;
+  padding: var(--space-2) var(--space-2);
+  font-size: var(--font-size-body-strong);
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-border-default);
+  white-space: nowrap;
+}
+
+.order-items__row td {
+  padding: var(--space-2) var(--space-2);
+  font-size: var(--font-size-body);
+  color: var(--color-text-primary);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.order-items__row:last-child td {
+  border-bottom: none;
+}
+
+.order-items__shipment-status {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-secondary);
+}
+
+.order-items__shipment-status--none {
+  color: var(--color-text-muted);
+}

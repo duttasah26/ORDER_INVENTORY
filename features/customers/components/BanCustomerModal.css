@@ -1,0 +1,4 @@
+.unban-button {
+  font-size: var(--font-size-caption);
+  padding: 2px var(--space-2);
+}

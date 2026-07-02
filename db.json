@@ -4513,6 +4513,22 @@
       "full_name": "Adam Miller",
       "password": "2776",
       "isblocked": false
+    },
+    {
+      "full_name": "Final Check",
+      "email_address": "finalcheck_1783024013699@example.com",
+      "password": "test1234",
+      "isblocked": false,
+      "id": 393,
+      "customer_id": 393
+    },
+    {
+      "full_name": "Debu Adak",
+      "email_address": "debu@gmail.com",
+      "password": "0000",
+      "isblocked": false,
+      "id": 394,
+      "customer_id": 394
     }
   ],
   "inventory": [
@@ -4909,6 +4925,30 @@
       "order_status": "COMPLETE",
       "store_id": 1,
       "id": 1856
+    },
+    {
+      "customer_id": 393,
+      "store_id": 1,
+      "order_status": "PENDING",
+      "order_tms": "2026-07-02 20:26:59",
+      "id": 1857,
+      "order_id": 1857
+    },
+    {
+      "customer_id": 1,
+      "store_id": 2,
+      "order_status": "DELIVERED",
+      "order_tms": "2026-07-02 20:37:52",
+      "id": 1858,
+      "order_id": 1858
+    },
+    {
+      "customer_id": 394,
+      "store_id": 1,
+      "order_status": "PENDING",
+      "order_tms": "2026-07-02 20:42:28",
+      "id": 1859,
+      "order_id": 1859
     }
   ],
   "order_items": [
@@ -5199,6 +5239,46 @@
       "quantity": 3,
       "shipment_id": 1,
       "id": 960
+    },
+    {
+      "order_id": 1857,
+      "product_id": 1,
+      "unit_price": 7252,
+      "quantity": 1,
+      "shipment_id": null,
+      "id": 961
+    },
+    {
+      "order_id": 1857,
+      "product_id": 2,
+      "unit_price": 3901,
+      "quantity": 1,
+      "shipment_id": null,
+      "id": 962
+    },
+    {
+      "order_id": 1858,
+      "product_id": 2,
+      "unit_price": 3901,
+      "quantity": 1,
+      "shipment_id": null,
+      "id": 963
+    },
+    {
+      "order_id": 1859,
+      "product_id": 3,
+      "unit_price": 1993,
+      "quantity": 1,
+      "shipment_id": null,
+      "id": 964
+    },
+    {
+      "order_id": 1859,
+      "product_id": 2,
+      "unit_price": 3901,
+      "quantity": 1,
+      "shipment_id": null,
+      "id": 965
     }
   ]
 }

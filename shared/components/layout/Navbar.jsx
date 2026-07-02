@@ -5,6 +5,7 @@ import { useAuthStore } from '@features/auth/store/authStore';
 import { useCartStore } from '@features/cart/store/cartStore';
 import { useOnClickOutside } from '@shared/hooks/useOnClickOutside';
 import { getInitials, classNames } from '@shared/utils/helpers';
+import { ThemeToggle } from '@shared/components/common/ThemeToggle';
 import './Navbar.css';
 
 /**
@@ -102,6 +103,8 @@ export function Navbar() {
             <ShoppingCart size={20} aria-hidden="true" />
             {itemCount > 0 && <span className="navbar__cart-badge">{itemCount}</span>}
           </Link>
+
+          <ThemeToggle />
 
           {isAuthenticated ? (
             <UserProfileDropdown />

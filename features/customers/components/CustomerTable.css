@@ -1,0 +1,64 @@
+.customer-table__cell-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* Cancel the parent .data-table__cell padding so this wrapper fills the
+     entire cell, making the whole cell (not just the text) clickable. */
+  margin: calc(-1 * var(--space-2)) calc(-1 * var(--space-3));
+  padding: var(--space-2) var(--space-3);
+  min-height: 20px;
+}
+
+.customer-table__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--color-brand-accent) 15%, transparent);
+  color: var(--color-brand-accent);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-body-strong);
+  flex-shrink: 0;
+}
+
+.customer-table__name {
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-text-primary);
+}
+
+.customer-table__email {
+  color: var(--color-text-secondary);
+}
+
+.customer-table__actions {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  opacity: 0.35;
+  transition: opacity var(--duration-fast) var(--ease-out);
+}
+
+.data-table__row:hover .customer-table__actions,
+.customer-table__actions:focus-within {
+  opacity: 1;
+}
+
+.customer-table__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+}
+
+.customer-table__action--danger {
+  color: var(--color-status-cancelled);
+  border-color: color-mix(in srgb, var(--color-status-cancelled) 40%, transparent);
+}
+
+.customer-table__action--danger:hover {
+  background: color-mix(in srgb, var(--color-status-cancelled) 12%, transparent);
+}

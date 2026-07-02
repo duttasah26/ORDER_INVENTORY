@@ -1,0 +1,8 @@
+.store-table__type-plain {
+  font-size: var(--font-size-body);
+  color: var(--color-text-muted);
+}
+
+.store-table__action {
+  white-space: nowrap;
+}

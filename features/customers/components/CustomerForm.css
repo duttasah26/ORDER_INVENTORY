@@ -1,0 +1,37 @@
+.customer-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.customer-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.customer-form__label {
+  font-size: var(--font-size-body-strong);
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-text-secondary);
+}
+
+.customer-form__error {
+  margin: 0;
+  font-size: var(--font-size-caption);
+  color: var(--color-status-cancelled);
+}
+
+.customer-form__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.customer-form__actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}

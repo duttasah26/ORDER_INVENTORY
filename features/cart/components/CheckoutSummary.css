@@ -1,0 +1,90 @@
+.checkout-summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+  max-width: 520px;
+}
+
+.checkout-summary__heading {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text-primary);
+}
+
+.checkout-summary__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.checkout-summary__item {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.checkout-summary__colour-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-default);
+}
+
+.checkout-summary__item-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--font-size-body);
+  color: var(--color-text-primary);
+}
+
+.checkout-summary__item-qty {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-muted);
+}
+
+.checkout-summary__item-total {
+  font-size: var(--font-size-body-strong);
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-text-primary);
+  min-width: 64px;
+  text-align: right;
+}
+
+.checkout-summary__divider {
+  height: 1px;
+  background: var(--color-border-default);
+  margin: var(--space-2) 0;
+}
+
+.checkout-summary__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+}
+
+.checkout-summary__row--total {
+  font-size: var(--font-size-numeric);
+  font-weight: var(--font-weight-numeric);
+  color: var(--color-text-primary);
+}
+
+.checkout-summary__place-order-btn {
+  margin-top: var(--space-3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+}

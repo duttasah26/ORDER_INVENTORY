@@ -22,6 +22,7 @@ import Profile from '@features/profile/pages/Profile';
 
 import Dashboard from '@features/dashboard/pages/Dashboard';
 import Customers from '@features/customers/pages/Customers';
+import CustomerDetails from '@features/customers/pages/CustomerDetails';
 import Inventory from '@features/inventory/pages/Inventory';
 
 import Stores from '@features/stores/pages/Stores';
@@ -61,6 +62,7 @@ export default function AppRoutes() {
           <Route path="/admin" element={<Dashboard />} />
           <Route path="/admin/products" element={<Products />} />
           <Route path="/admin/customers" element={<Customers />} />
+          <Route path="/admin/customers/:id" element={<CustomerDetails />} />
           <Route path="/admin/orders" element={<Orders />} />
           <Route path="/admin/orders/:id" element={<OrderDetails />} />
           <Route path="/admin/inventory" element={<Inventory />} />

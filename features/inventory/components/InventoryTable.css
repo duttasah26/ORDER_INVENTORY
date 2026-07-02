@@ -1,0 +1,41 @@
+.inventory-table__product-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.inventory-table__colour-dot {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-default);
+}
+
+.inventory-table__product-name {
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-text-primary);
+}
+
+.inventory-table__quantity-cell {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.inventory-table__quantity-value {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--font-size-numeric);
+  font-weight: var(--font-weight-numeric);
+  color: var(--color-text-primary);
+}
+
+.inventory-table__low-icon {
+  color: var(--color-status-lowstock);
+}
+
+.inventory-table__action {
+  white-space: nowrap;
+}

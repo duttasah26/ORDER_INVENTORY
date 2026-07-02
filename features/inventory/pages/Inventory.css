@@ -1,0 +1,76 @@
+.inventory-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.inventory-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.inventory-page__title {
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-display);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.inventory-page__header .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.inventory-page__filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-3);
+}
+
+.inventory-page__filter {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 180px;
+}
+
+.inventory-page__filter-label {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-text-secondary);
+}
+
+.inventory-page__filter--switch {
+  min-width: 0;
+  padding-bottom: 6px;
+}
+
+.inventory-page__switch-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.inventory-page__switch-input {
+  cursor: pointer;
+}
+
+/* Bootstrap's default `.form-switch` checked state uses the theme primary
+   color — override with the brand accent color so the toggle matches the
+   rest of the app's "accent color when on" affordance. */
+.inventory-page__switch-input:checked {
+  background-color: var(--color-brand-accent);
+  border-color: var(--color-brand-accent);
+}
+
+.inventory-page__switch-input:focus {
+  border-color: var(--color-brand-accent);
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--color-brand-accent) 25%, transparent);
+}

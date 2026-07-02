@@ -1,0 +1,26 @@
+.store-map__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-brand-accent);
+  text-decoration: none;
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-sm);
+  width: fit-content;
+  transition: background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out);
+}
+
+.store-map__link:hover {
+  color: var(--color-brand-accent-hover);
+  border-color: var(--color-brand-accent);
+}
+
+.store-map__caption {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-muted);
+  margin: 0;
+}

@@ -1,0 +1,66 @@
+.inventory-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+}
+
+.inventory-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.inventory-card__colour-dot {
+  flex-shrink: 0;
+  margin-top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-default);
+}
+
+.inventory-card__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.inventory-card__product-name {
+  margin: 0;
+  font-size: var(--font-size-body-strong);
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-text-primary);
+}
+
+.inventory-card__store-name {
+  margin: 0;
+  font-size: var(--font-size-caption);
+  color: var(--color-text-muted);
+}
+
+.inventory-card__quantity-row {
+  display: flex;
+  align-items: center;
+}
+
+.inventory-card__quantity-value {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--font-size-numeric);
+  font-weight: var(--font-weight-numeric);
+  color: var(--color-text-primary);
+}
+
+.inventory-card__low-icon {
+  color: var(--color-status-lowstock);
+}
+
+.inventory-card__action {
+  align-self: flex-start;
+}

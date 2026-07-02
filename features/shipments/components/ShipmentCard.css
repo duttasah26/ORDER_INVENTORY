@@ -1,0 +1,32 @@
+.shipment-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+}
+
+.shipment-card__row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.shipment-card__label {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-muted);
+}
+
+.shipment-card__value {
+  font-size: var(--font-size-body-strong);
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-text-primary);
+}
+
+.shipment-card__value--muted {
+  font-weight: var(--font-weight-body);
+  color: var(--color-text-muted);
+  font-style: italic;
+}

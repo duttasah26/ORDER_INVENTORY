@@ -1,0 +1,33 @@
+.inventory-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.inventory-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.inventory-form__label {
+  font-size: var(--font-size-body-strong);
+  font-weight: var(--font-weight-body-strong);
+  color: var(--color-text-secondary);
+}
+
+.inventory-form__error {
+  font-size: var(--font-size-caption);
+  color: var(--color-status-cancelled);
+}
+
+.inventory-form__hint {
+  margin: 0;
+  font-size: var(--font-size-caption);
+  color: var(--color-text-muted);
+}
+
+.inventory-form__actions {
+  display: flex;
+  justify-content: flex-end;
+}

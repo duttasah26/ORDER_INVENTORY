@@ -146,6 +146,22 @@ export default function customersRouter(db) {
     return res.json({ customer, shipments });
   });
 
+  // POST / (exact /api/v1/customers) -- custom, NOT a fallthrough to the
+  // default router. json-server's default create only auto-assigns `id`,
+  // but every join in this app (orders.customer_id, shipments.customer_id,
+  // the unified lookup routes above, etc.) keys off the domain `customer_id`
+  // field, so a customer created via the default router would be
+  // unreachable from any of those joins. Insert via the same `db` instance
+  // (so ids stay in sync with the default router) and backfill
+  // customer_id = id immediately after, mirroring the equivalent fix
+  // applied to order creation on the frontend.
+  router.post('/', (req, res) => {
+    const created = db.get('customers').insert(req.body || {}).write();
+    db.get('customers').find({ id: created.id }).assign({ customer_id: created.id }).write();
+    const finalRecord = db.get('customers').find({ id: created.id }).value();
+    return res.status(201).json(finalRecord);
+  });
+
   // PUT / (exact /api/v1/customers)
   router.put('/', (req, res) => {
     const { id, ...fields } = req.body || {};
