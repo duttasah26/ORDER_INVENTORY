@@ -11,15 +11,20 @@ order-inventory-management/
 │   └── robots.txt
 │
 ├── src/
-│
-├── app/
-│   ├── App.jsx
-│   ├── main.jsx
-│   ├── routes.jsx
-│   ├── providers.jsx
-│   └── queryClient.js
-│
-├── shared/
+│   │
+│   ├── assets/
+│   │   ├── icons/
+│   │   ├── illustrations/
+│   │   └── logo/
+│   │
+│   ├── app/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   ├── routes.jsx
+│   │   ├── providers.jsx
+│   │   └── queryClient.js
+│   │
+│   ├── shared/
 │   │
 │   ├── api/
 │   │   ├── axios.js
@@ -84,7 +89,7 @@ order-inventory-management/
 │       ├── variables.css
 │       └── theme.css
 │
-├── features/
+│   ├── features/
 │
 │   ├── auth/
 │   │   ├── api/
@@ -286,9 +291,9 @@ order-inventory-management/
 │       └── pages/
 │           └── NotFound.jsx
 │
-├── stores/
-│   ├── themeStore.js
-│   └── uiStore.js
+│   └── stores/
+│       ├── themeStore.js
+│       └── uiStore.js
 │
 ├── tests/
 │   ├── components/
@@ -299,7 +304,5 @@ order-inventory-management/
 │
 ├── db.json
 ├── vite.config.js
-├── tailwind.config.js
-├── postcss.config.js
 ├── package.json
-└── README.md
+└── package-lock.json
